@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Lumora</title>
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+        
+        .w3-sidebar {
+            width: 120px;
+            background-color: #fd5202;
+            height: 100%;
+            position: fixed;
+            z-index: 1;
+        }
+
+        #main {
+            margin-left: 120px;
+        }
+
+        .logo-parceiro {
+            max-height: 80px;
+            width: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Responsividade para qualquer sistema operacional / Telas pequenas */
+        @media only screen and (max-width: 600px) {
+            .w3-sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .w3-sidebar a {
+                float: left;
+                width: 20%;
+                padding: 10px !important;
+            }
+            #main {
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+<body class="w3-black">
+
+    <nav class="w3-sidebar w3-bar-block w3-small w3-center">
+        <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-home w3-xxlarge"></i>
+            <p>HOME</p>
+        </a>
+        <a href="#sobre" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white"> 
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>SOBRE</p>
+        </a>
+        <a href="#tecnologias" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-gears w3-xxlarge"></i>
+            <p>TECNOLOGIAS</p>
+        </a>
+        <a href="#parceiros" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-handshake-o w3-xxlarge"></i>
+            <p>PARCEIROS</p>
+        </a>
+        <a href="#faq-section" class="w3-bar-item w3-button w3-padding-large w3-hover-black w3-hover-text-cyan w3-text-white">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>FAQ</p>
+        </a>
+    </nav>
+
+    <div class="w3-padding-large" id="main">
+        
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <h1>
+                <img src="logotipo.png" alt="Lumora" class="w3-image" style="width:90%; max-width:600px;">
+            </h1>
+        </header>
+
+        <div class="w3-content w3-padding-64" id="sobre">
+            <h2 class="w3-text-cyan">Sobre a Lumora</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <ul class="w3-ul w3-hoverable w3-center w3-white w3-text-black">
+                <li class="w3-cyan w3-xlarge w3-padding-32 w3-text-white">Nossa Identidade</li>
+                <li class="w3-padding-16">
+                    <strong>História:</strong>
+                    <p style="text-align: justify; padding: 0 20px;">
+                        A Lumora nasceu em 28 de maio de 2016, fruto da visão empreendedora de seus fundadores, 
+                        Scarllet Roosevelt e Matthews Schmidt. A trajetória da empresa começou a se desenhar em 
+                        Berlim, na Alemanha, onde os dois se conheceram durante um grande encontro de tecnologia. 
+                        O que iniciou como uma forte afinidade profissional logo se transformou em uma sólida parceria 
+                        de negócios.<br><br>
+                        Unindo forças e compartilhando o mesmo propósito, Scarllet e Matthews fundaram a Lumora com uma 
+                        missão clara: transformar o world e impulsionar a sustentabilidade global através do poder da 
+                        energia limpa e renovável. Hoje, a empresa desenvolve tecnologias de ponta para converter a luz 
+                        natural em autonomia, moldando o futuro da mobilidade elétrica.
+                    </p>
+                </li>
+                <li class="w3-padding-16">
+                    <strong>Missão:</strong>
+                    <p>Tornar a energia solar parte natural da mobilidade elétrica, reduzindo a dependência de infraestrutura e o custo operacional das frotas — sem complicar o que já funciona.</p>
+                </li>
+                <li class="w3-padding-16">
+                    <strong>Visão:</strong>
+                    <p>Ser a líder global em soluções de energia solar para mobilidade elétrica, promovendo um futuro mais sustentável e eficiente.</p>
+                </li>
+                <li class="w3-padding-16">
+                    <strong>Valores:</strong>
+                    <p>Inovação, Sustentabilidade, Qualidade, Colaboração e Integridade.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="tecnologias">
+            <h2 class="w3-text-cyan">Tecnologia Certificada</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <p class="w3-text-grey">Conheça a engenharia de alta performance por trás do Kit de Engenharia Solar Híbrida da Lumora, desenvolvido sob medida para o vão do teto solar original.</p>
+            
+            <div class="w3-container w3-center w3-padding-16">
+                <img src="kit.png" alt="Arquitetura do Kit Lumora" class="w3-image w3-card-4" style="width:100%; max-width:850px; border-radius: 8px;">
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="parceiros">
+            <h2 class="w3-text-cyan">Parceiros e Homologações</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <div class="w3-container w3-padding-16">
+                
+                <div class="w3-row w3-white w3-text-black w3-margin-bottom w3-card w3-round" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <div class="w3-col l3 m4 s12 w3-padding-large w3-center">
+                        <img src="TUV.jpg" alt="TUV Rheinland" class="logo-parceiro">
+                    </div>
+                    <div class="w3-col l9 m8 s12 w3-padding-large">
+                        <h4><strong>TUV Rheinland</strong></h4>
+                        <p class="w3-small">
+                            <strong>Email:</strong> datenschutzbeauftragter@de.tuv.com | <strong>Telefone:</strong> +49 221 806-0<br>
+                            <strong>Website:</strong> <a href="https://www.tuv.com/world/en/" target="_blank" class="w3-text-blue">www.tuv.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-white w3-text-black w3-margin-bottom w3-card w3-round" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <div class="w3-col l3 m4 s12 w3-padding-large w3-center">
+                        <img src="UL.jpg" alt="UL Solutions" class="logo-parceiro">
+                    </div>
+                    <div class="w3-col l9 m8 s12 w3-padding-large">
+                        <h4><strong>UL Solutions</strong></h4>
+                        <p class="w3-small">
+                            <strong>Email:</strong> CustomerExperienceCenter@ul.com | <strong>Telefone:</strong> +1 847 272-8800<br>
+                            <strong>Website:</strong> <a href="https://www.ul.com/" target="_blank" class="w3-text-blue">www.ul.com</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-white w3-text-black w3-margin-bottom w3-card w3-round" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <div class="w3-col l3 m4 s12 w3-padding-large w3-center">
+                        <img src="IEC.jfif" alt="IEC" class="logo-parceiro">
+                    </div>
+                    <div class="w3-col l9 m8 s12 w3-padding-large">
+                        <h4><strong>IEC (International Electrotechnical Commission)</strong></h4>
+                        <p class="w3-small">
+                            <strong>Email:</strong> info@iec.ch | <strong>Telefone:</strong> +41 2 2919-0211<br>
+                            <strong>Website:</strong> <a href="https://www.iec.ch/homepage" target="_blank" class="w3-text-blue">www.iec.ch</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w3-row w3-white w3-text-black w3-margin-bottom w3-card w3-round" style="display: flex; align-items: center; flex-wrap: wrap;">
+                    <div class="w3-col l3 m4 s12 w3-padding-large w3-center">
+                        <img src="UNECE.jfif" alt="UNECE WP.29" class="logo-parceiro">
+                    </div>
+                    <div class="w3-col l9 m8 s12 w3-padding-large">
+                        <h4><strong>UNECE WP.29</strong></h4>
+                        <p class="w3-small">
+                            <strong>Email:</strong> wp.29@un.org | <strong>Telefone:</strong> +41 22917-1234<br>
+                            <strong>Website:</strong> <a href="https://unece.org/wp29-introduction" target="_blank" class="w3-text-blue">unece.org/wp29</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="faq-section">
+            <h2 class="w3-text-cyan">Perguntas e Respostas</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <div class="w3-container w3-white w3-text-black w3-padding-large w3-card">
+                <p><strong>1. O que é o Kit Lumora e como ele funciona?</strong><br>
+                R: O Kit Lumora é um sistema modular de recarga solar híbrida que se encaixa diretamente no vão do teto solar do seu veículo elétrico — sem furos, sem modificações estruturais e sem anular a garantia do fabricante. Ao abrir o teto, os painéis fotovoltaicos ficam expostos e iniciam a recarga automaticamente. Um BMS inteligente gerencia a energia captada pelo sol, combinando com a rede elétrica e a frenagem regenerativa para garantir sempre a fonte mais eficiente disponível.</p>
+                
+                <p><strong>2. O kit funciona mesmo com sol forte de meio-dia? Não esquenta o carro?</strong><br>
+                R: Sim, e esse é exatamente o diferencial da Lumora. O kit possui uma camada de dissipação térmica integrada que absorve e dissipa o calor gerado pela exposição solar, protegendo tanto o interior do veículo quanto a bateria. O sistema desliga automaticamente a recarga si a temperatura ultrapassar o limite seguro, garantindo que o veículo fique ao sol sem riscos — e ainda aproveitando a energia disponível.</p>
+                
+                <p><strong>3. Com quais veículos elétricos o Kit Lumora é compatível?</strong><br>
+                R: O Kit Lumora foi desenvolvido para ser compatível com os modelos de EVs mais vendidos no Brasil, incluindo BYD Dolphin, BYD Seal, BYD Yuan Plus, Hyundai Ioniq 5, Volkswagen ID.4 e outros. A lista de modelos homologados cresce continuamente. Para frotas com modelos específicos, nossa equipe realiza uma avaliação técnica personalizada e gratuita antes da instalação.</p>
+                
+                <p><strong>4. Qual a economia real que minha frota pode ter com o Kit Lumora?</strong><br>
+                R: A economia varia conforme o perfil de uso da frota, a região e a incidência solar local. Em média, frotas que operam durante o dia em regiões ensolaradas como o Centro-Oeste e Nordeste brasileiro reduzem em até 30% o custo de recarga por veículo. O payback médio do investimento é de 18 a 24 meses, após o qual a economia é contínua.</p>
+                
+                <p><strong>5. Como é feita a instalação? Precisa levar o carro a uma oficina especializada?</strong><br>
+                R: A instalação é feita por técnicos certificados pela Lumora, em parceria com centros automotivos credenciados em todo o Brasil. O processo leva em média 2 horas por veículo e não exige nenhuma modificação permanente — o kit pode ser removido sem deixar vestígios. Para frotas acima de 10 veículos, oferecemos instalação no local da empresa.</p>
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="contato">
+            <h2 class="w3-text-cyan">Contato</h2>
+            <hr style="width:200px" class="w3-opacity">
+            
+            <div class="w3-row w3-section">
+                <div class="w3-col m12 w3-text-grey">
+                    <p><i class="fa fa-map-marker w3-text-white w3-xxlarge w3-margin-right"></i> Berlim, Alemanha</p>
+                    <p><i class="fa fa-phone w3-text-white w3-xxlarge w3-margin-right"></i> Telefone: +30 6918-3066</p>
+                    <p><i class="fa fa-envelope w3-text-white w3-xxlarge w3-margin-right"></i> Email: lumora@company.de</p>
+                </div>
+            </div>
+            
+            <p>Entre em contato:</p>
+            <form action="#" method="POST">
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="email" placeholder="Email" required name="Email"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Assunto" required name="Assunto"></p>
+                <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+                <p>
+                    <button class="w3-button w3-light-gray w3-padding-large" type="submit">
+                        <i class="fa fa-paper-plane"></i> ENVIAR MENSAGEM
+                    </button>
+                </p>
+            </form>
+        </div>
+
+    </div> </body>
+</html>
+
+                                        
+            
+        
+        
